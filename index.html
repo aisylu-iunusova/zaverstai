@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="page">
+        <div class="page__header">
+            <header class="header">
+                <a class="header__logo" href="/">
+                    <img class="logo" src="images/logo.png" alt="logo ">
+                </a>
+                <div class="header__menu">
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#all_articles" class="nav__link">Статьи</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#about_me" class="nav__link">Обо мне</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#portfolio" class="nav__link">Портфолио</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#write_me" class="nav__link">Написать мне</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div class="cover">
+                <img src="images/cover.png" alt="main-cover">
+            </div>
+        </div>
+        <main class="page__main">
+            <section class="section__articles" id="all_articles">
+                <div class="articles">
+                    <div class="articles__header">
+                        <h2 class="headline">Все статьи</h2>
+                        <button class="articles__button">Выбрать тему</button>
+                        <ul class="articles__submenu">
+                            <li><a href="#" data-tag="travel">Путешествия</a></li>
+                            <li><a href="#" data-tag="city">Город</a></li>
+                            <li><a href="#" data-tag="book">Книги</a></li>
+                            <li><a href="#" data-tag="photo">Фотографии</a></li>
+                            <li><a href="#" data-tag="cook">Рецепты</a></li>
+                            <li><a href="#" data-tag="all_articles">Все статьи</a></li>
+                        </ul>
+                    </div>
+                    <div class="articles__body">
+                        <ul class="articles__list">
+                            <li class="articles__item" data-tag="travel">
+                                <a href="article_list.html" class="card">
+                                    <img src="images/card_1.png" alt="Путешествие в Берлин в августе" class="card__cover">
+                                    <h3 class="card__name">Путешествие в Берлин в августе</h3>
+                                    <p class="card__content">Летний месяц я провела в столице Германии вместе с
+                                        друзьями. И вот как это было!</p>
+                                    <div class="card__footer">
+                                        <span class="card__tags">Теги: путешествия</span>
+                                        <span class="card__date">29.09.2020</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="articles__item" data-tag="city">
+                                <a href="article_list.html" class="card">
+                                    <img src="images/card_2.png" alt="Где выпить колдбрю в Москве" class="card__cover">
+                                    <h3 class="card__name">Где выпить колдбрю в Москве</h3>
+                                    <p class="card__content">Собрала для вас список любимых кофеен,
+                                        где подают лучший летний напиток.</p>
+                                    <div class="card__footer">
+                                        <span class="card__tags">Теги: город</span>
+                                        <span class="card__date">24.07.2020</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="articles__item" data-tag="book">
+                                <a href="article_list.html" class="card">
+                                    <img src="images/card_3.png" alt="Прочитано: книжные рекомендации" class="card__cover">
+                                    <h3 class="card__name">Прочитано: книжные рекомендации</h3>
+                                    <p class="card__content">Рассказываю о прочитанных за последнее время книгах:
+                                        фавориты и провалы.</p>
+                                    <div class="card__footer">
+                                        <span class="card__tags">Теги: книги</span>
+                                        <span class="card__date">15.07.2020</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="articles__item" data-tag="photo">
+                                <a href="article_list.html" class="card">
+                                    <img src="images/card_4.png" alt="Снимки на плёнку" class="card__cover">
+                                    <div class="card__content_under">
+                                        <h3 class="card__name white_text">Снимки на плёнку</h3>
+                                        <p class="card__content white_text">Поделилась с вами весенними фотографиями,
+                                            и секретами удачных снимков.</p>
+                                        <div class="card__footer">
+                                            <span class="card__tags white_text">Теги: фотографии</span>
+                                            <span class="card__date white_text">29.06.2020</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="articles__item" data-tag="cook">
+                                <a href="article_list.html" class="card">
+                                    <img src="images/card_5.png" alt="Домашний чизкейк" class="card__cover">
+                                    <div class="card__content_under">
+                                        <h3 class="card__name white_text">Домашний чизкейк</h3>
+                                        <p class="card__content white_text">Что может быть лучше чизкейка с сезонными
+                                            ягодами? Только домашний чизкейк!</p>
+                                        <div class="card__footer">
+                                            <span class="card__tags white_text">Теги: рецепты</span>
+                                            <span class="card__date white_text">24.06.2020</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="articles__footer">
+                        <button class="button">Показать еще</button>
+                    </div>
+                </div>
+            </section>
+            <section class="section__info" id="about_me">
+                <div class="info__header">
+                    <h2 class="headline">Обо мне</h2>
+                </div>
+                <div class="info__body">
+                    <img src="images/info_cover.png" alt="Всем привет! Меня зовут Аня, и это мой личный блог." class="info__cover">
+                    <div class="info__content">
+                        <p class="info__text">Всем привет! Меня зовут Аня, и это мой личный блог.
+                            Здесь ты найдёшь рассказы о моих путешествиях, снимки
+                            на плёнку, рецепты, обзоры на книги. В общем, тексты о том,
+                            что мне интересно.
+                            <br>
+                            <br> Я работаю копирайтером, поэтому мой блоге — это ещё и моё
+                            портфолио. Ниже размещены несколько моих лучших
+                            рабочих текстов.
+                            <br>
+                            <br>
+                            Буду рада новым сотрудничествам! Если вы хотите написать мне — это можно
+                            сделать в соцсетях
+                            или через <a href="#write_me" class="form">форму</a>. Всегда приятно услышать обратную связь
+                            от читателей и познакомиться поближе.
+                            <br>
+                            <br> Приятного чтения!
+                        </p>
+                        <blockquote class="info__phrase">Я верю, что каждый раз пробуя новое,
+                            выходящее за зону моего комфорта,
+                            я действительно узнаю настояющую
+                            себя.
+                        </blockquote>
+                    </div>
+                </div>
+            </section>
+            <section class="section__portfolio" id="portfolio">
+                <div class="portfolio__header">
+                    <h2 class="headline">Портфолио</h2>
+                </div>
+                <div class="portfolio__body">
+                    <ul class="portfolio__list  ">
+                        <li class="portfolio__item blog_html">
+                            <h4 class="portfolio__project ">Блог HTML Academy</h4>
+                            <h5 class="card__name ">«Как учиться продуктивно»</h3>
+                                <p class="card__content">Про основные методы обучения,
+                                    которые помогут быстро и надолго
+                                    запомнить информацию.</p>
+                        </li>
+                        <li class="portfolio__item magazine_lnk">
+                            <h4 class="portfolio__project white_text">Журнал «LNK»</h4>
+                            <h5 class="card__name white_text">«Зачем поцели нужны человеку?
+                                И какие они бывают»</h3>
+                                <p class="card__content white_text">Поцелуи — повсеместная ежедневная
+                                    практика. Но зачем люди целуются?
+                                    Какие смысли вкладывают в этот ритуал?
+                                    И где корни этой практики?</p>
+                        </li>
+                        <li class="portfolio__item blog_tl">
+                            <h4 class="portfolio__project">Журнал «Т — Л»</h4>
+                            <h5 class="card__name">«Советы по эффективной
+                                удалённой работе»</h3>
+                                <p class="card__content">Поделилась лайфхаками, которые помогают
+                                    мне работать продуктивно из дома. </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="portfolio__footer">
+                    <button class="button">ПОКАЗАТЬ ЕЩЕ</button>
+                </div>
+            </section>
+            <section class="section__feedback" id="write_me">
+                <div class="feedback__header">
+                    <h2 class="headline">Написать мне</h2>
+                </div>
+                <form action="" class="feedback__form">
+                    <div class="feedback__rows">
+                        <label for="name">
+                            <span>Ваше имя</span>
+                            <input type="text" id="name" class="name" placeholder="Иван Иванов" required>
+                        </label>
+                        <label for="email">
+                            <span>Email</span>
+                            <input type="email" id="email" class="email" placeholder="google@gmail.com" required>
+                        </label>
+                    </div>
+                    <div class="feedback__rows">
+                        <label for="message">
+                            <span>Сообщение</span>
+                            <textarea type="text" id="message" minlength="10" maxlength="200" rows="15" class="message"
+                                placeholder="Напишите здесь ваше сообщение." required></textarea>
+                        </label>
+                    </div>
+                    <div class="feedback__rows">
+                        <button type="submit" class="button button_form" disabled>ОТПРАВИТЬ</button>
+                    </div>
+                </div>
+            </section>
+            <footer class="page__footer">
+                <ul class="footer__social">
+                    <li class="social vk"><a href="#" class="nav__link">ВК</a></li>
+                    <li class="social telega"><a href="#" class="nav__link">Телеграм</a></li>
+                    <li class="social insta"><a href="#" class="nav__link">Инстаграм</a></li>
+                    <li class="social twitter"><a href="#" class="nav__link">Твиттер</a></li>
+                </ul>
+            </footer>
+        </main>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
